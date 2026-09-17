@@ -1,0 +1,49 @@
+{
+  "name": "bb-plugin-synthwave-84",
+  "version": "0.1.0",
+  "description": "Synthwave '84 palette for the bb UI and code diffs (dark).",
+  "type": "module",
+  "author": "Sérgio Santos <s3rgiosan@gmail.com> (https://github.com/s3rgiosan)",
+  "license": "MIT",
+  "homepage": "https://github.com/s3rgiosan/bb-plugins/tree/main/bb-plugin-synthwave-84#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/s3rgiosan/bb-plugins.git",
+    "directory": "bb-plugin-synthwave-84"
+  },
+  "bugs": {
+    "url": "https://github.com/s3rgiosan/bb-plugins/issues"
+  },
+  "funding": "https://github.com/sponsors/s3rgiosan",
+  "scripts": {
+    "build": "bb plugin build"
+  },
+  "engines": {
+    "bb": ">=0.43",
+    "bbPluginSdk": ">=0.4.87"
+  },
+  "bb": {
+    "name": "Synthwave '84",
+    "description": "Synthwave '84 palette for the bb UI and code diffs (dark).",
+    "branding": {
+      "icon": "Palette"
+    },
+    "server": "./server.ts",
+    "skills": [],
+    "themes": [
+      {
+        "id": "synthwave-84",
+        "name": "Synthwave '84",
+        "description": "Neon dark theme ported from the VS Code Synthwave '84 palette.",
+        "css": "./themes/synthwave-84.css",
+        "codeTheme": { "dark": "synthwave-84", "light": "synthwave-84" }
+      }
+    ]
+  },
+  "devDependencies": {
+    "@get-bb/plugin-sdk": "0.4.87",
+    "@types/node": "^22.0.0",
+    "bb-app": "0.43.1",
+    "typescript": "^5.7.0"
+  }
+}

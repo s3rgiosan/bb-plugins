@@ -1,0 +1,38 @@
+:root,
+.light,
+.dark {
+  --canvas: #262335;   /* editor.background */
+  --ink: #ffffff;
+  --sidebar: #241b2f;  /* darker side/activity bar */
+
+  --primary: #ff7edb;              /* neon pink accent */
+  --primary-foreground: #262335;
+  --file-accent: #36f9f6;          /* cyan file-path tint */
+
+  --destructive: #fe4450;
+  --destructive-text: #ff6c7d;     /* lighter for text on dark */
+  --warning: #f97e72;
+  --warning-text: #ffa08f;
+  --attention: #fede5d;
+  --success: #72f1b8;
+  --diff-added: #72f1b8;
+  --diff-removed: #fe4450;
+  --pr-merged: #ff7edb;
+
+  /* Secondary text tiers derive from the active anchors. */
+  --muted-foreground: color-mix(in oklch, var(--ink) 70%, var(--canvas));
+  --subtle-foreground: color-mix(in oklch, var(--ink) 58%, var(--canvas));
+  --readback-foreground: color-mix(in oklch, var(--ink) 64%, var(--canvas));
+
+  /* Terminal palette (Synthwave '84). */
+  --ansi-0: #241b2f;  --ansi-1: #fe4450;  --ansi-2: #72f1b8;  --ansi-3: #fede5d;
+  --ansi-4: #36f9f6;  --ansi-5: #ff7edb;  --ansi-6: #03edf9;  --ansi-7: #ffffff;
+  --ansi-8: #495495;  --ansi-9: #fe4450;  --ansi-10: #72f1b8; --ansi-11: #fede5d;
+  --ansi-12: #36f9f6; --ansi-13: #ff7edb; --ansi-14: #03edf9; --ansi-15: #ffffff;
+  --ansi-bg-fg-0: #ffffff;  --ansi-bg-fg-1: #000000;  --ansi-bg-fg-2: #000000;
+  --ansi-bg-fg-3: #000000;  --ansi-bg-fg-4: #000000;  --ansi-bg-fg-5: #000000;
+  --ansi-bg-fg-6: #000000;  --ansi-bg-fg-7: #000000;  --ansi-bg-fg-8: #ffffff;
+  --ansi-bg-fg-9: #000000;  --ansi-bg-fg-10: #000000; --ansi-bg-fg-11: #000000;
+  --ansi-bg-fg-12: #000000; --ansi-bg-fg-13: #000000; --ansi-bg-fg-14: #000000;
+  --ansi-bg-fg-15: #000000;
+}
