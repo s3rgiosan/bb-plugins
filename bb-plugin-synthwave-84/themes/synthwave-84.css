@@ -1,6 +1,5 @@
 :root,
-.light,
-.dark {
+.light {
   --canvas: #262335;   /* editor.background */
   --ink: #ffffff;
   --sidebar: #241b2f;  /* darker side/activity bar */
@@ -10,6 +9,7 @@
   --file-accent: #36f9f6;          /* cyan file-path tint */
 
   --destructive: #fe4450;
+  --destructive-foreground: #262335;  /* text/icons on a destructive fill */
   --destructive-text: #ff6c7d;     /* lighter for text on dark */
   --warning: #f97e72;
   --warning-text: #ffa08f;
@@ -35,4 +35,25 @@
   --ansi-bg-fg-9: #000000;  --ansi-bg-fg-10: #000000; --ansi-bg-fg-11: #000000;
   --ansi-bg-fg-12: #000000; --ansi-bg-fg-13: #000000; --ansi-bg-fg-14: #000000;
   --ansi-bg-fg-15: #000000;
+}
+
+.dark {
+  --canvas: #262335;   /* editor.background */
+  --ink: #ffffff;
+  --sidebar: #241b2f;  /* darker side/activity bar */
+
+  --primary: #ff7edb;              /* neon pink accent */
+  --primary-foreground: #262335;
+  --file-accent: #36f9f6;          /* cyan file-path tint */
+
+  --destructive: #fe4450;
+  --destructive-foreground: #262335;  /* text/icons on a destructive fill */
+  --destructive-text: #ff6c7d;     /* lighter for text on dark */
+  --warning: #f97e72;
+  --warning-text: #ffa08f;
+  --attention: #fede5d;
+  --success: #72f1b8;
+  --diff-added: #72f1b8;
+  --diff-removed: #fe4450;
+  --pr-merged: #ff7edb;
 }
